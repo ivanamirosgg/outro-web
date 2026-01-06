@@ -378,9 +378,9 @@ export default function Home() {
               </Link>
 
               <div className="mt-8 rounded-2xl border border-white/10 bg-black/20 p-5">
-                <p className="text-sm font-semibold">Tip rápido</p>
+                <p className="text-sm font-semibold"></p>
                 <p className="mt-1 text-sm text-white/70">
-                  Pon fotos reales (entrenamiento, hielo, gym) y listo: ya se verá idéntico a su marca.
+
                 </p>
               </div>
             </div>
