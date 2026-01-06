@@ -68,7 +68,6 @@ export default function Home() {
     priority
     className="h-8 w-auto object-contain"
   />
-  <span className="hidden sm:block text-xs text-white/60">{BRAND.city}</span>
 </Link>
 
             <nav className="hidden items-center gap-6 md:flex">
@@ -116,7 +115,6 @@ export default function Home() {
                 <Badge>BOX</Badge>
                 <Badge>STRENGTH</Badge>
                 <Badge>ICE BATH</Badge>
-                <Badge>{BRAND.city}</Badge>
               </div>
 
              <div className="mt-6">
@@ -130,7 +128,6 @@ export default function Home() {
   />
 
   <p className="mt-4 text-sm sm:text-base text-white/70">
-    {BRAND.tagline} <span className="text-white/40">•</span> {BRAND.city}
   </p>
 </div>
 
@@ -292,7 +289,7 @@ export default function Home() {
           <SectionTitle eyebrow="UBICACIÓN" title="Visítanos" subtitle="Agrega dirección y link real de Google Maps." />
           <div className="mt-8 grid gap-4 lg:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-              <h3 className="text-base font-semibold">OUTRO • {BRAND.city}</h3>
+              <h3 className="text-base font-semibold">OUTRO •</h3>
               <p className="mt-2 text-sm text-white/70">
                 Dirección: _________ <br />
                 Referencias: _________
