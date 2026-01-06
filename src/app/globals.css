@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+/* Tema OUTRO */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --outro-accent: 77 227 255; /* ICE CYAN */
+
+  /* Fuerza el tema oscuro de la landing */
+  --background: #0b0f14; /* OUTRO black */
+  --foreground: #f4f6f8; /* OUTRO white */
 }
 
 @theme inline {
@@ -12,15 +16,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* IMPORTANTE: quita el cambio automático por prefers-color-scheme,
+   porque si el usuario tiene modo claro, te cambia el fondo a blanco.
+   Si quieres conservarlo, te dejo alternativa abajo. */
+
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b0f14;
+    --foreground: #f4f6f8;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Selección de texto (bonito) */
+::selection {
+  background: rgba(var(--outro-accent), 0.25);
 }
