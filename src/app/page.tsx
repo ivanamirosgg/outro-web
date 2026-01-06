@@ -128,7 +128,8 @@ export default function Home() {
   />
 
   <p className="mt-4 text-sm sm:text-base text-white/70">
-  </p>
+  {BRAND.tagline}
+</p>
 </div>
 
               <p className="mt-4 max-w-xl text-white/70">
@@ -297,7 +298,7 @@ export default function Home() {
 
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="https://www.google.com/maps"
+                  href="https://share.google/o6BPk6Si6JzXj07Wd"
                   target="_blank"
                   className="inline-flex w-full items-center justify-center rounded-xl bg-[rgb(var(--outro-accent))] px-4 py-3 text-sm font-semibold text-black hover:opacity-90"
                 >
@@ -312,17 +313,22 @@ export default function Home() {
                 <InfoPill label="Enfoque" value="Técnica + Progreso" />
               </div>
             </div>
+<div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+  <div className="aspect-[16/10] w-full">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.9437308492857!2d-101.71222482496488!3d21.154637480526393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc1663c0dece9%3A0xfbe9497ca99b68d9!2sOutro%20Boxing%20Studio!5e0!3m2!1ses!2sus!4v1767729329132!5m2!1ses!2sus"
+      className="h-full w-full"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
 
-            <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-              <div className="flex aspect-[16/10] items-center justify-center bg-black/20 px-6 text-center">
-                <p className="text-sm text-white/70">
-                  Aquí puedes incrustar un mapa (iframe) de Google Maps.
-                </p>
-              </div>
-              <div className="border-t border-white/10 p-4 text-xs text-white/60">
-                Tip: pega el iframe de Google Maps Embed aquí.
-              </div>
-            </div>
+  <div className="border-t border-white/10 p-4 text-xs text-white/60">
+    Outro Boxing Studio · Blvd. Campestre 1821, León, Gto.
+  </div>
+</div>
           </div>
         </Container>
       </section>
